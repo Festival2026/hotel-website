@@ -1,0 +1,126 @@
+/* --- Базовые настройки --- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa; /* Светлый фон */
+    color: #333;
+    min-width: 780px; /* Требование методички */
+    max-width: 1200px; /* Требование методички */
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Тень по краям, чтобы сайт выделялся */
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Цвета --- */
+.bg-dark-green {
+    background-color: #1b4332 !important; /* Благородный темно-зеленый */
+}
+
+.text-green {
+    color: #2d6a4f !important;
+}
+
+/* --- Навигация --- */
+.navbar {
+    border-bottom: 3px solid #40916c;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #74c69d !important;
+}
+
+/* --- Заголовки --- */
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1b4332;
+}
+
+/* --- Кнопки --- */
+.btn-success {
+    background-color: #2d6a4f;
+    border-color: #2d6a4f;
+}
+.btn-success:hover {
+    background-color: #40916c;
+    border-color: #40916c;
+}
+
+/* --- Карточки (для номеров и новостей) --- */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* --- Отступы для контента --- */
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* --- Hero-секция (Главная) --- */
+.hero-section {
+    position: relative;
+    /* Замени 'hotel_main.jpg' на имя твоей скачанной картинки, если оно другое */
+    background-image: url('/hotel/public/assets/img/hotel_main.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Высота баннера */
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    background: rgba(27, 67, 50, 0.7); /* Полупрозрачный зеленый фильтр поверх фото */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 3.5rem;
+}
+
+.table-dark-green { background-color: #1b4332; }
+
+/* --- Карусель --- */
+.hero-slide {
+    height: 70vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.hero-overlay {
+    background: rgba(27, 67, 50, 0.6); /* Полупрозрачный зеленый фильтр */
+    width: 100%;
+    height: 100%;
+}
+.hero-overlay h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
